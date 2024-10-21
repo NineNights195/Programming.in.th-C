@@ -6,7 +6,7 @@ int main(){
     for(int i=0 ; i<10 ; i++){
         int n;
         cin >> n;
-        cnt[n]=1;
+        cnt[n%42]=1;
     }
     int ans=0;
     for(int i=0 ; i<42 ; i++)
