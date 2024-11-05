@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    char al[15];
+    char al[999];
     cin >> al;
 
     // LINE 1
@@ -62,15 +62,11 @@ int main(){
 
     // LINE 5
     for(int i=1 ; al[i-1]!='\0' ; i++){
-        if(i>15){
-            break;
+        cout << ".";
+        if(i%3==0){
+            cout << ".*.";
         }else{
-            cout << ".";
-            if(i%3==0){
-                cout << ".*.";
-            }else{
-                cout << ".#.";
-            }
+            cout << ".#.";
         }
     }
     cout << ".";
